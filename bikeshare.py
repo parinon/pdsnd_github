@@ -1,3 +1,4 @@
+#import libraries
 import time
 import pandas as pd
 import numpy as np
@@ -167,7 +168,7 @@ def raw_data(df):
         if data not in ['yes','no']:
             print('\nNot Define')
             continue
-        elif data == 'yes':    
+        elif data == 'yes':
             print(df.sample(n = 5))
             continue
         elif data == 'no':
@@ -184,7 +185,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
         raw_data(df)
-                               
+
         restart = input('\nWould you like to restart? Enter Yes or No.\n')
         if restart.lower() != 'yes':
             break
